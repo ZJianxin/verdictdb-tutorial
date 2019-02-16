@@ -12,7 +12,7 @@ sc.setLogLevel("off")
 warehouse_location = abspath('spark-warehouse')
 spark = SparkSession \
     .builder \
-    .appName("Python Spark SQL Hive integration example") \
+    .appName("Pyverdict example") \
     .config("spark.sql.warehouse.dir", warehouse_location) \
     .enableHiveSupport() \
     .getOrCreate()
